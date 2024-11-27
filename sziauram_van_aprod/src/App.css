@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.canvas {
+  height: 80vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.player {
+  background-color: gold;
+  position: absolute;
+  z-index: 100;
+}
+
+.obstacle {
+  background-color:firebrick;
+  position: absolute;
+  z-index: 100; 
+}
+
+.floor {
+  background-color: #b45309;
+  width: 100%;
+  height: 20vh;
+} 
+
+.building {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+}
+
+.infobar {
+  padding: 1.2rem 1.5rem 1.2rem 1.5rem;
+  z-index: 1000;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  border-radius: 0.3rem;
+  background-color: #111827;
+  width: fit-content;
+}
+.infobar p {
+  color: white;
+  margin-right: 6px;
+  z-index: 1000;
+  font-size: large;
+}
+.infobar .info {
+  display: flex;
+}
